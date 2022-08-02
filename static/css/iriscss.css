@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.google.com/specimen/Poppins');
+
+body{
+    background-color: beige;
+    font-family: 'Poppins';
+    margin-top: 10em;
+    padding: 0;
+    font-size: large;
+}
+
+.mainclass{
+    text-align: center;
+}

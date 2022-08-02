@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/iriscss.css') }}">
+</head>
+<body>
+    <section class="mainclass">
+        <h1>IRIS CLASSIFIER</h1>
+        <form action="/classify" method="post">
+
+            <label for="SepalLength">Sepal Length(cm)</label>
+            <input type="text" name="SepalLength" id="SepalLength"><br>
+
+            <label for="SepalWidth">Sepal Width(cm)</label>
+            <input type="text" name="SepalWidth" id="SepalWidth"><br>
+
+            <label for="PetalLength">Petal Length(cm)</label>
+            <input type="text" name="PetalLength" id="PetalLength"><br>
+
+            <label for="PetalWidth">Petal Width(cm)</label>
+            <input type="text" name="PetalWidth" id="PetalWidth"><br>
+
+            <button type="submit" value="Classify">Classify</button>
+
+
+        </form>
+        <h3> {{pred}} </h3>
+    </section>
+</body>
+</html>
